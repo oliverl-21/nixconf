@@ -97,6 +97,12 @@
     clock24 = true;
     shortcut = "a";
     baseIndex = 1;
+    extraConfig = ''
+        set-option -g set-clipboard external
+        set-option -g mouse on
+        set-option -g allow-passthrough on
+        set-option -g terminal-features 'xterm*:clipboard
+    '';
   };
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -107,6 +113,7 @@
       curl
       bitwarden-desktop   
       solaar
+      xclip
     ];
     sessionVariables = rec {
       SSH_AUTH_SOCK = "$HOME/.bitwarden-ssh-agent.sock";
