@@ -6,8 +6,6 @@
       fontDir.enable = true;
       packages = with pkgs; [
         nerd-fonts.fira-code
-	ghostty
-	kitty
       ];
     };
   };

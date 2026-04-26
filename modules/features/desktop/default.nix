@@ -2,6 +2,7 @@
     imports = with self.nixosModules; [
       fonts
       desktopsteam
+      desktop-apps
     ];
   };
 }

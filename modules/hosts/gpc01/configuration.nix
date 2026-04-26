@@ -102,6 +102,7 @@
         set-option -g mouse on
         set-option -g allow-passthrough on
         set-option -g terminal-features 'xterm*:clipboard
+	set -g extended-keys-format csi-u
     '';
   };
   # Allow unfree packages
@@ -111,8 +112,6 @@
     systemPackages = with pkgs; [
       git
       curl
-      bitwarden-desktop   
-      solaar
       xclip
     ];
     sessionVariables = rec {

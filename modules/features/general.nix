@@ -10,7 +10,7 @@
       extraGroups = ["wheel" "networkmanager"];
       # shell = self.packages.${pkgs.system}.environment;
       openssh.authorizedKeys.keys = [
-        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPFiz8aR3ta7KRuoxEDYaqj7Cu0aOVKVJbYCB4u3xJqH oliver@laue.family"
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPFiz8aR3ta7KRuoxEDYaqj7Cu0aOVKVJbYCB4u3xJqH"
       ];
     };
     nix.settings.trusted-users = [
